@@ -385,7 +385,7 @@
 							this.picker.is(e.target) ||
 							this.picker.find(e.target).length
 						)){
-							$(this.picker).hide();
+                            this.isInline ? true : $(this.picker).hide();
 						}
 					}, this)
 				}]
